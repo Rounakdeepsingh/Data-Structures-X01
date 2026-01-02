@@ -9,7 +9,7 @@
 package sortingalgorithms;
 public class BubbleSort {
     public static void main(String[] args){
-        int[] arr = {5,4,3,2,1};
+        int[] arr = {5,4,6,1,8};
         bSort(arr);
 
         for(int i = 0; i < arr.length; i++){
@@ -28,7 +28,7 @@ public class BubbleSort {
         for(int i = 0; i < n-1; i++){
             boolean isSwap = false; // Sorted Array Check
             for(int j = 0; j < n-i-1; j++){
-                if(arr[j] > arr[j+1]){
+                if(arr[j] > arr[j+1]){ // Change symbol from > to < to get the same array in desc order
                     Swap(arr, j, j+1);
                     isSwap = true;
                 }
