@@ -1,5 +1,12 @@
-package sortingalgorithms;
+//Time complexity :::
+//Best Case : O(n) --> sorted array
+//Average Case : O(n^2) --> Random Order
+//Worst Case : O(n^2) --> Reverse Order
 
+//Space Complexity :::O(1) --> even with temp because Space complexity measures:
+//Extra memory that grows with input size (n)
+
+package sortingalgorithms;
 public class BubbleSort {
     public static void main(String[] args){
         int[] arr = {5,4,3,2,1};
@@ -19,7 +26,7 @@ public class BubbleSort {
     public static void Bsort(int[] arr){
         int n = arr.length;
         for(int i = 0; i < n-1; i++){
-            boolean isSwap = false;
+            boolean isSwap = false;// Sorted Array Check
             for(int j = 0; j < n-i-1; j++){
                 if(arr[j] > arr[j+1]){
                     Swap(arr, j, j+1);
