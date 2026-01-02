@@ -10,7 +10,7 @@ package sortingalgorithms;
 public class BubbleSort {
     public static void main(String[] args){
         int[] arr = {5,4,3,2,1};
-        Bsort(arr);
+        bSort(arr);
 
         for(int i = 0; i < arr.length; i++){
             System.out.println(arr[i]+ " ");
@@ -23,17 +23,17 @@ public class BubbleSort {
         arr[j] = temp;
     }
 
-    public static void Bsort(int[] arr){
+    public static void bSort(int[] arr){
         int n = arr.length;
         for(int i = 0; i < n-1; i++){
-            boolean isSwap = false;// Sorted Array Check
+            boolean isSwap = false; // Sorted Array Check
             for(int j = 0; j < n-i-1; j++){
                 if(arr[j] > arr[j+1]){
                     Swap(arr, j, j+1);
                     isSwap = true;
                 }
             }
-            if(!isSwap){
+            if(!isSwap){ //Array is already Sorted
             break;
         }
         }
